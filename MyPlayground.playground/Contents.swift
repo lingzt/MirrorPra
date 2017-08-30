@@ -19,11 +19,11 @@ var descriptions = [String]()
 let drivingTipProperties = Mirror(reflecting: tip).children
 
 
-//descriptions = drivingTipProperties.map{$0.value as? String}.flatMap { $0 }
+descriptions = drivingTipProperties.map{$0.value as? String}.flatMap { $0 }
 
-for property in drivingTipProperties {
-    descriptions.append(property.value as! String)
-}
+//for property in drivingTipProperties {
+//    descriptions.append(property.value as! String)
+//}
 
 descriptions
 
